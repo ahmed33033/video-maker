@@ -20,7 +20,7 @@ export const RemotionRoot: React.FC = () => {
         calculateMetadata={async (props)=>{
           const boss_text = await ridgeway_boss();
           return {props: {
-            text: boss_text.messages[-1].toFormattedString()}
+            text: boss_text.content.toString()}
           }
         }}
       />

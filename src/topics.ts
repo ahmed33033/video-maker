@@ -3,7 +3,6 @@ export const topic =
     "description": "A content-idea bank for a Ridgeway Plaza Instagram page. 'topics' contains discussion topics grouped by category. 'formats' contains halal-friendly tones/styles you can use to deliver any topic. Combine one topic + one format to get a post concept.",
     "topics": [
         // "food_takes_and_opinions"
-        "The most overrated spot at Ridgeway",
         "The most underrated/slept-on spot",
         "Best dessert in the whole plaza",
         "Best drink/juice/tea spot",
@@ -61,7 +60,6 @@ export const topic =
         "Joke / one-liner",
         "Meme caption",
         "Playful tease, light-hearted not mocking",
-        "Absurd exaggeration",
         "Relatable POV format",
         // "emotional_reflective":
         "Serious / heartfelt reflection",

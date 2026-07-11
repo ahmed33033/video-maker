@@ -5,6 +5,7 @@ jobs:
     create_video:
         runs-on: ubuntu-latest
         steps:
+            - run: echo "::mask::${{secrets.IG_USER_ID}}"
             - uses: "actions/checkout@main"
               with:
                 repository: "ridgeway-warrior/video-maker"

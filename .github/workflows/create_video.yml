@@ -13,7 +13,8 @@ jobs:
               with: 
                 version: 11
             - run: pnpm ci
-            - run: REMOTION_OPENAI_API_KEY="${{secrets.OPENAI_API_KEY}}" pnpm remotion render MyComp video.mp4
+            - run: echo "OPENAI_API_KEY=${{secrets.OPENAI_API_KEY}}" >> .env
+            - run: pnpm remotion render MyComp video.mp4
             - uses: "actions/upload-artifact@main"
               with:
                 name: remotion-video

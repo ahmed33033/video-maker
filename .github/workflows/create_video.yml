@@ -11,7 +11,7 @@ jobs:
             - uses: "actions/setup-node@main"
             - uses: "pnpm/action-setup@master"
               with: 
-                version: 11
+                version: 11.7
             - run: pnpm ci
             - run: echo "OPENAI_API_KEY=${{secrets.OPENAI_API_KEY}}" >> .env
             - run: pnpm remotion render MyComp video.mp4
